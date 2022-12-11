@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+:root{
+  --color-primary: #d53f41;
+  --color-dark: #626262;
+  --color-darker: #464646;
+  --color-light: #dbd8d6;
+  --color-lighter: #f5f0ec;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  overflow-x: hidden;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  background-color: var(--color-lighter);
+  color: var(--color-darker);
+}
+
+.wrapper{
+  margin: 0 5vw;
+}
+
+section{
+  padding: 10vw 0;
+}
+
+.min-h-100vh{
+  min-height: 100vh;
+}
+
+/* navbar section start */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 0;
+  font-family: 'Syncopate', sans-serif;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+}
+
+.links,
+.favourit-link {
+  font-weight: 700;
+}
+
+.links a,
+.favourit-link a{
+  color: var(--color-dark);
+  position: relative;
+}
+
+.links a::after,
+.favourit-link a::after{
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-primary);
+  transition: 0.5s;
+}
+
+.links a:hover::after,
+.favourit-link a:hover::after{
+  width: 120%;
+}
+
+.logo a{
+  color: var(--color-darker);
+}
