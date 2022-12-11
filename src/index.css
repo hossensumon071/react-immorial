@@ -93,3 +93,36 @@ section{
 .logo a{
   color: var(--color-darker);
 }
+
+/* hero section */
+
+.hero{
+  font-family: "Bai Jamjuree", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10vw;
+  line-height: 1.2;
+  min-height: 100vh;
+  color: var(--color-darker);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 8px;
+  position: relative;
+}
+.ethereal,
+.canvas {
+  position: relative;
+}
+
+.ethereal span,
+.canvas span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-lighter);
+}
