@@ -26,3 +26,25 @@ export const useGsapShutterUnveil = (item, delay = 0, trig) => {
       );
   }, []);
 };
+
+export const useGsapDownStagger = (arr, delay = 0) => {
+  useEffect(() => {
+    const el = arr.map((item) => item.current);
+
+    gsap.fromTo(
+      el,
+       {
+        y: "-100%",
+        opacity: 0,
+       },
+       {
+        y: 0,
+        opacity: 1,
+        duration: 1.5,
+        stagger: 0.1,
+        ease: Expo.easeInOut,
+        delay: delay
+       }
+       );
+  }, []);
+};
