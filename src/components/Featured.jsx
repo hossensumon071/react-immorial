@@ -19,7 +19,7 @@ const Featured = () => {
           <span className="features-shutter-l" ref={fetureLeftShutterRef}></span>
         </div>
         <div className="features-r">
-          <span className='features-text'>90'S CASSETTE PLAYE</span>
+          <span className='features-text'>90'S CASSETTE PLAYER</span>
           <img src="https://images.pexels.com/photos/6076410/pexels-photo-6076410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="90'S CASSETTE PLAYER" />
           <span className="features-shutter-r" ref={fetureRightShutterRef}></span>
         </div>
