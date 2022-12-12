@@ -212,3 +212,12 @@ section{
   bottom: 0;
   background-color: var(--color-lighter);
 }
+
+/* about page start */
+.about{
+  font-size: 3vw;
+  line-height: 1.5;
+}
+.about p:last-child{
+  margin-top: 3vw;
+}
