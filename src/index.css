@@ -221,3 +221,48 @@ section{
 .about p:last-child{
   margin-top: 3vw;
 }
+
+/* gallery area start  */
+.gallery .section-title{
+  margin-left: 5vw;
+}
+.gallery-wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 10vw;
+  padding: 10vw;
+  background-color: var(--color-primary);
+}
+.gallery-item{
+  position: relative;
+  width: 50%;
+}
+.gallery-item-title{
+  position: absolute;
+  top: 10%;
+  left: -50%;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 8vw;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--color-lighter);
+  z-index: 1;
+  mix-blend-mode: color-dodge;
+}
+.gallery-item-category{
+  position: absolute;
+  left: 0;
+  bottom: -5%;
+  text-transform: uppercase;
+  color: var(--color-lighter);
+  letter-spacing: 10px;
+  z-index: 1;
+}
+.gallery-item-img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
