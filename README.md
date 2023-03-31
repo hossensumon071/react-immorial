@@ -1,4 +1,4 @@
-# Photography Project
+# Immemorial Project
 
 This is a photography website built with React JS, React Router, Tailwind CSS, GSAP animation, and GSAP ScrollTrigger. The website provides a seamless browsing experience for our users, with a beautiful and responsive design that showcases our photography in the best possible way.
 
